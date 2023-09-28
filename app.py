@@ -19,7 +19,7 @@ transform = A.Compose([
         A.CenterCrop(height=405, width=405),
         ToTensorV2()
 ])
-pickle_in = open("classifier.pkl","rb")
+pickle_in = open("Saved-Models/EfficientNetB3saved.pkl","rb")
 model = pickle.load(pickle_in)
 fol=['Acne,Rosacea,Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions',
  'Atopic Dermatitiss',
